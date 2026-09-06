@@ -1,0 +1,48 @@
+OS:	Windows 10 Version 22H2
+Qt:	6.10.3
+GL_VENDOR:	NVIDIA Corporation
+GL_RENDERER:	NVIDIA GeForce RTX 2060 SUPER/PCIe/SSE2
+GL_VERSION:	4.6.0 NVIDIA 610.62
+TrenchBroom Version:	2026.2
+TrenchBroom Build:	v2026.2 Release Win64
+Reason:	3765269347
+Stack trace (most recent call first):
+#0  0x00007ffe21bb4e6e in std::_Xbad_function_call
+#1  0x00007ff621563ac7 in public: bool __cdecl tb::ui::Action::enabled(class tb::ui::ActionExecutionContext const & __ptr64)const __ptr64
+#2  0x00007ff62152f2bd in private: void __cdecl tb::ui::MapViewBase::updateActionStates(void) __ptr64
+#3  0x00007ff62152ef3c in private: void __cdecl tb::ui::MapViewBase::toolChanged(class tb::ui::Tool & __ptr64) __ptr64
+#4  0x00007ff62154b2b7 in public: void __cdecl tb::Notifier<class tb::ui::Tool & __ptr64>::operator()<class tb::ui::Tool & __ptr64>(class tb::ui::Tool & __ptr64) __ptr64
+#5  0x00007ff621550702 in public: void __cdecl tb::ui::ToolBox::deactivateAllTools(void) __ptr64
+#6  0x00007ff6213f2e04 in public: void __cdecl tb::Notifier<>::operator()<>(void) __ptr64
+#7  0x00007ff621465014 in public: class kdl::result<void,struct kdl::result_error> __cdecl tb::ui::MapDocument::reload(void) __ptr64
+#8  0x00007ff62142a2e2 in public: void __cdecl tb::ui::MapWindow::revertDocument(void) __ptr64
+#9  0x00007ff621563b1d in public: void __cdecl tb::ui::Action::execute(class tb::ui::ActionExecutionContext & __ptr64)const __ptr64
+#10 0x00007ff621416be1 in std::_Func_impl_no_alloc<`tb::ui::MapWindow::createMenus'::`2'::<lambda_1>,void,tb::ui::Action const &>::_Do_call
+#11 0x00007ffdaad1b64e in QObject::qt_static_metacall
+#12 0x00007ffdaad1e213 in QMetaObject::activate
+#13 0x00007ffdaa0f0390 in QAction::activate
+#14 0x00007ffdaa7ac33e in QMenu::actionGeometry
+#15 0x00007ffdaa7ac0f2 in QMenu::actionGeometry
+#16 0x00007ffdaa7b2b22 in QMenu::mouseReleaseEvent
+#17 0x00007ffdaa6397ef in QWidget::event
+#18 0x00007ffdaa7ad9cf in QMenu::event
+#19 0x00007ffdaa5f3520 in QApplicationPrivate::notify_helper
+#20 0x00007ffdaa5f16e3 in QApplication::notify
+#21 0x00007ffdaacd9c50 in QCoreApplication::notifyInternal2
+#22 0x00007ffdaa5f5f68 in QApplicationPrivate::sendMouseEvent
+#23 0x00007ffdaa65fd83 in QWidgetRepaintManager::updateStaticContentsSize
+#24 0x00007ffdaa65dce8 in QWidgetRepaintManager::updateStaticContentsSize
+#25 0x00007ffdaa5f3520 in QApplicationPrivate::notify_helper
+#26 0x00007ffdaa5f261d in QApplication::notify
+#27 0x00007ffdaacd9c50 in QCoreApplication::notifyInternal2
+#28 0x00007ffda9d4f509 in QGuiApplicationPrivate::processMouseEvent
+#29 0x00007ffda9db044a in QWindowSystemInterface::sendWindowSystemEvents
+#30 0x00007ffdaae7921f in QEventDispatcherWin32::processEvents
+#31 0x00007ffdaa075758 in QWindowsGuiEventDispatcher::processEvents
+#32 0x00007ffdaace0663 in QEventLoop::exec
+#33 0x00007ffdaacd8179 in QCoreApplication::exec
+#34 0x00007ff6213608b3 in main
+#35 0x00007ff621eeddff in qtEntryPoint
+#36 0x00007ff621ee5705 in __scrt_common_main_seh
+#37 0x00007ffe3f357373 in BaseThreadInitThunk
+#38 0x00007ffe3fcbcc90 in RtlUserThreadStart

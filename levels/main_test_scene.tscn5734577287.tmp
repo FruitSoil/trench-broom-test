@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://cbeab32kenr6"]
+
+[ext_resource type="PackedScene" uid="uid://1div7nhfb061" path="res://levels/trench_broom_prototype.tscn" id="1_jsqok"]
+[ext_resource type="PackedScene" uid="uid://jyncanbkjjnq" path="res://addons/Godot-Simple-First-Person-Controller-7f61d350153478d1ee255af8f606995bd6413646/player/player.tscn" id="2_oqg8c"]
+
+[node name="Scene" type="Node3D" unique_id=442825269]
+
+[node name="Location" type="Node3D" parent="." unique_id=1915883783]
+
+[node name="TrenchBroomPrototype" parent="Location" unique_id=2035804898 instance=ExtResource("1_jsqok")]
+
+[node name="Player" parent="." unique_id=214707072 instance=ExtResource("2_oqg8c")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.29407513, 0.50000143, -2.4956083)
